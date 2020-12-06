@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/my"
+        android:icon="@drawable/my"
+        android:title="내정보" />
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="홈"/>
+    <item
+        android:id="@+id/guestbook"
+        android:icon="@drawable/guestbook"
+        android:title="방명록관리" />
+</menu>
