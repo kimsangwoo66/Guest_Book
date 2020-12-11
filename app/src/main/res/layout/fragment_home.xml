@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:ignore="MissingPrefix">
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,6 +14,7 @@
         <TextView
             android:id="@+id/noticeword"
             android:text="알림사항"
+            android:textStyle="bold"
             android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +38,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/qrlistenerButton"
+                android:id="@+id/qrlistenerbtn"
                 android:layout_width="110dp"
                 android:layout_height="100dp"
 
@@ -49,14 +48,13 @@
                 />
 
             <Button
+                android:id="@+id/makebookbtn"
                 android:layout_width="110dp"
                 android:layout_height="100dp"
-
+                android:layout_marginLeft="150dp"
                 android:text="방명록 \n 생성"
                 android:textSize="20dp"
-                android:layout_marginLeft="170dp"
-                tools:ignore="MissingConstraints"
-                />
+                tools:ignore="MissingConstraints" />
         </LinearLayout>
 
 

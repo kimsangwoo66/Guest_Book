@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.f2"
-        minSdkVersion 17
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -37,7 +37,10 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
     implementation 'androidx.navigation:navigation-fragment:2.3.1'
     implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
     implementation 'com.github.bootpay:client_android_java:2.0.123'
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.4'
+    implementation "androidx.camera:camera-view:1.0.0-alpha14"
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

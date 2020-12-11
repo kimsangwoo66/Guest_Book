@@ -2,18 +2,72 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView2"
+
+        android:id="@+id/my_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="내정보"
         android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/my_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="이름:"
+        android:textSize="30dp"
+        app:layout_constraintRight_toLeftOf="@+id/my_name2"
+        app:layout_constraintTop_toBottomOf="@+id/my_title"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/my_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/edge"
+        android:text="김상우"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toRightOf="@+id/my_name1"
+        app:layout_constraintTop_toBottomOf="@+id/my_title"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/my_name1"
+        app:layout_constraintRight_toLeftOf="@id/my_id2"
+        android:id="@+id/my_id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내아이디:"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="175dp">
+
+    </TextView>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/my_name2"
+        app:layout_constraintLeft_toRightOf="@id/my_id1"
+        android:id="@+id/my_id2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edge"
+        android:text="mrk212"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="175dp"></TextView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

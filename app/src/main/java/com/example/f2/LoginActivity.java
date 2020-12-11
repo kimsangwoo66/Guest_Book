@@ -48,7 +48,11 @@ public class LoginActivity extends AppCompatActivity {
         login_btn.setOnClickListener(new View.OnClickListener()  { // 로그인 버튼 이벤트
             @Override
             public void onClick(View view) {
-                final  String userID = editid.getText().toString();
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                LoginActivity.this.startActivity(intent);
+                finish();
+
+                /*final  String userID = editid.getText().toString();
                 String userPassword = editpassword.getText().toString();
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
@@ -65,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
                                         .create();
                                 dialog.show();
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                                intent.putExtra("userID",userID);
+                                //intent.putExtra("userID",userID);
 
                                 LoginActivity.this.startActivity(intent);
                                 finish();
@@ -82,11 +86,15 @@ public class LoginActivity extends AppCompatActivity {
                         {
                             e.printStackTrace();
                         }
+
+
                     }
                 };
                 LoginRequest loginRequest = new LoginRequest(userID, userPassword, responseListener); //로그인 요청 값을 받을수 있는 클래스 객체 생성
                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
                 queue.add(loginRequest);
+
+                 */
             }
 
         });
