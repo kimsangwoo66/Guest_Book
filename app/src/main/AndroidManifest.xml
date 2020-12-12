@@ -41,6 +41,10 @@
         <activity android:name=".Makeguestbook"
             ></activity>
 
+        <activity android:name=".SignUpActivity">
+
+        </activity>
+
     </application>
 
 </manifest>

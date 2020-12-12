@@ -20,12 +20,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
-import java.util.zip.ZipEntry;
 
-import kr.co.bootpay.Bootpay;
-import kr.co.bootpay.BootpayAnalytics;
-import kr.co.bootpay.enums.Method;
-import kr.co.bootpay.enums.PG;
 
 public class MainActivity extends AppCompatActivity {
  //fragmentManager 가 할수있는일
