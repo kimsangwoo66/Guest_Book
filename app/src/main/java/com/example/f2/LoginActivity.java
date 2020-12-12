@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     private AlertDialog dialog;
 
     EditText editpassword;
-    Button login_signup,login_find;
+    Button login_signup_btn,login_find_btn;
 
 
 
@@ -36,9 +36,9 @@ public class LoginActivity extends AppCompatActivity {
 
         final Button login_btn=findViewById(R.id.login_btn);
 
-        login_signup=findViewById(R.id.login_singup); //회원가입 화면 이동 버튼 지정
+        login_signup_btn=findViewById(R.id.login_singup); //회원가입 화면 이동 버튼 지정
 
-        login_find=findViewById(R.id.login_find); // 아직안함
+        login_find_btn=findViewById(R.id.login_find); // 아직안함
 
 
 
@@ -100,7 +100,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
-        login_signup.setOnClickListener(new View.OnClickListener(){ // 회원가입 화면이동 이벤트
+        login_signup_btn.setOnClickListener(new View.OnClickListener(){ // 회원가입 화면이동 이벤트
             @Override
             public void onClick(View view) {
                 Toast toast = Toast.makeText(LoginActivity.this, "회원가입 화면으로 이동", Toast.LENGTH_SHORT);

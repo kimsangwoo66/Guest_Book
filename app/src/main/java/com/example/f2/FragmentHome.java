@@ -32,7 +32,7 @@ public class FragmentHome extends Fragment {
     private ListView noticeListView;
     private NoticeListAdapter adapter;
     private List<Notice> noticedList;
-    private Button qrlistenerbtn, makebookbtn;
+    private Button qrlistener_btn, makebook_btn;
     Intent intent;
 
     @Nullable
@@ -40,8 +40,8 @@ public class FragmentHome extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
             View view = inflater.inflate(R.layout.fragment_home,container,false);
 
-        qrlistenerbtn = view.findViewById(R.id.qrlistenerbtn);
-        makebookbtn = view.findViewById(R.id.makebookbtn);
+        qrlistener_btn = view.findViewById(R.id.qrlistenerbtn);
+        makebook_btn = view.findViewById(R.id.makebookbtn);
         noticeListView = (ListView) view.findViewById(R.id.noticeListView);
         noticedList = new ArrayList<Notice>();
         noticedList.add(new Notice("알림", "졸업작품 전시회 방명록에 등록되었습니다.", "pm:18:47"));
@@ -52,7 +52,7 @@ public class FragmentHome extends Fragment {
         adapter = new NoticeListAdapter(getActivity(), noticedList);
         noticeListView.setAdapter(adapter);
 
-        qrlistenerbtn.setOnClickListener(new View.OnClickListener() {
+        qrlistener_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 IntentIntegrator intentIntegrator = new IntentIntegrator(getActivity());
@@ -64,7 +64,7 @@ public class FragmentHome extends Fragment {
             }
         });
 
-        makebookbtn.setOnClickListener(new View.OnClickListener() {
+        makebook_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(getActivity(), Makeguestbook.class);
