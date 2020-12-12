@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/first_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:textStyle="bold"
+        android:text="추가사항을 작성해주세요"
+        android:textSize="30dp"
+        android:background="@drawable/edge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="270dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="108dp"
+        android:text="김상우"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/nameText1"
+        app:layout_constraintTop_toBottomOf="@+id/first_text"
+
+        tools:ignore="MissingConstraints"></EditText>
+
+    <EditText
+        android:id="@+id/login_time"
+        android:layout_width="270dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="11:10:12"
+        app:layout_constraintBottom_toTopOf="@+id/addregister_edit_thema"
+        app:layout_constraintStart_toEndOf="@+id/addregister_register_text"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nameText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="60dp"
+        android:text="이름"
+        android:textSize="30dp"
+        app:layout_constraintRight_toLeftOf="@id/edit_name"
+        app:layout_constraintTop_toBottomOf="@+id/first_text"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/addregister_register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="등록시간"
+        android:textSize="30dp"
+
+        app:layout_constraintRight_toLeftOf="@+id/login_time"
+        app:layout_constraintTop_toBottomOf="@+id/nameText1"
+        app:layout_constraintBottom_toTopOf="@+id/addregister_thema_text"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/addregister_thema_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="60dp"
+        android:text="테마"
+        android:textSize="30dp"
+        app:layout_constraintRight_toLeftOf="@+id/addregister_edit_thema"
+        app:layout_constraintTop_toBottomOf="@+id/addregister_register_text"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/addregister_attribute_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="64dp"
+        android:text="속성"
+        android:textSize="30dp"
+        app:layout_constraintRight_toLeftOf="@+id/addregister_edit_attribute"
+        app:layout_constraintTop_toBottomOf="@+id/addregister_thema_text"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/addregister_edit_thema"
+        android:layout_width="270dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/addregister_edit_attribute"
+        app:layout_constraintLeft_toRightOf="@+id/addregister_thema_text"
+        tools:ignore="MissingConstraints"></EditText>
+
+    <EditText
+        android:id="@+id/addregister_edit_attribute"
+        android:layout_width="270dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintLeft_toRightOf="@+id/addregister_attribute_text"
+        app:layout_constraintTop_toBottomOf="@+id/addregister_edit_thema"
+        tools:ignore="MissingConstraints"></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="등록완료"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="560dp"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

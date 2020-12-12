@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+
+        android:id="@+id/text_bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="방명록"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="38dp"></TextView>
+
+    <EditText
+        android:id="@+id/bookname_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="방명록 이름을 입력하세요"
+        app:layout_constraintTop_toBottomOf="@id/text_bookname"
+        tools:ignore="MissingConstraints"></EditText>
+
+    <TextView
+        android:id="@+id/text_thema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="테마"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/bookname_input"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"></TextView>
+
+    <TextView
+        android:id="@+id/text_attribute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="속성"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/text_thema"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/qr_input1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintLeft_toRightOf="@+id/text_thema"
+        app:layout_constraintTop_toBottomOf="@+id/bookname_input"
+        tools:ignore="MissingConstraints"></EditText>
+
+
+    <EditText
+
+        android:id="@+id/qr_input2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/text_attribute"
+        app:layout_constraintTop_toBottomOf="@+id/qr_input1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="238dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/generatebtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:text="생성"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_attribute"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+
+        android:id="@+id/qrplaceHolder"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="#817C7C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/generatebtn"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@id/generatebtn"
+        app:layout_constraintTop_toTopOf="@id/generatebtn"
+        app:layout_constraintVertical_bias="0.53"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
