@@ -14,6 +14,6 @@ public class FragmentMy extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_my, container, false);
+        return inflater.inflate(R.layout.fragment_my, container, false);//내정보 화면 지정
     }
 }

@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_page);
+        setContentView(R.layout.login_page);//로그인 페이지 화면 지정
 
         final  EditText editid= (EditText) findViewById(R.id.editid);
         final EditText editpassword= (EditText) findViewById(R.id.editpassword);
@@ -48,8 +48,8 @@ public class LoginActivity extends AppCompatActivity {
         login_btn.setOnClickListener(new View.OnClickListener()  { // 로그인 버튼 이벤트
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                LoginActivity.this.startActivity(intent);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);//intent에 mainactivity 클래스를 불러오는 정보 저장
+                LoginActivity.this.startActivity(intent);// mainactivity를 불러옴
                 finish();
 
                 /*final  String userID = editid.getText().toString();

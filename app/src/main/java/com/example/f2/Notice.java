@@ -4,7 +4,7 @@ public class Notice {
 
     String notice;
     String name;
-    public Notice(String notice, String name, String date) {
+    public Notice(String notice, String name, String date) {//notice 클래스의 생성자 구성
         this.notice = notice;
         this.name = name;
         this.date = date;
